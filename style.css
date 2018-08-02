@@ -1,0 +1,437 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #F9F9FB;
+}
+
+h1,h2,h3,h4, .price {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 32px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+p { font-size: 14px; }
+
+/* General */
+.logo {
+	height: 25px;
+}
+
+.navbar-links ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-links li a { color: #fff; font-size: 12px; }
+
+.navbar-links li:not(:first-child) { margin-left: 25px; }
+
+#airshipNav { transition: background 0.5s; }
+#airshipNav.sticky { background: #2A363B; }
+
+.btn {
+	border-radius: 50px;
+    color: #fff;
+    background: #FB005F;
+    border: none;
+    font-size: 14px;
+    padding: 5px 30px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+	background: #ff498e;
+}
+
+.btn-lg {
+	padding: 8px 40px;
+    font-size: 16px;
+}
+
+.btn-lined {
+	border: 2px solid #FB005F;
+	color: #FB005F;
+	background: none;
+}
+
+.btn-lined:hover {
+	color: #fff;
+	border: 2px solid #FB005F;
+	background: #FB005F;
+}
+
+.btn-lined-white {
+	border: 2px solid #fff;
+	color: #fff;
+	background: none;
+}
+
+.btn-lined-white:hover {
+	background: #fff;
+	border: 2px solid #fff;
+	color: #333;
+}
+
+.text-gray { color: #ddd; }
+.text-pink { color: #FB005F; }
+
+.card-shadowed {
+	box-shadow: 0 1px 1px 0 rgba(90,122,190,0.1), 0 10px 20px 0 rgba(90,122,190,0.2);
+	background: #fff;
+	border-radius: 5px;
+}
+
+.waves-bottom {
+	position: absolute;
+	bottom: -2px;
+}
+
+/* ==================== */
+/* ====== FOOTER ====== */
+/* ==================== */
+
+footer {
+	margin-top: -200px;
+}
+
+footer .cta {
+	padding: 12em 0 2em;
+	background-image: linear-gradient(-225deg, #007adf 0%, #00ecbc 100%);
+	position: relative;
+	color: #fff;
+}
+
+.page-features footer .cta { padding-top: 8em; }
+.page-pricing footer { margin-top: -150px; }
+
+footer .waves-footer {
+	position: absolute;
+	top: -2px;
+}
+
+footer .credits {
+	background: #2A363B;
+	padding: 2em 2em 3em;
+}
+
+footer .credits p { font-size: 12px; }
+
+/* ==================== */
+/* ======= HOME ======= */
+/* ==================== */
+
+/* Home Icons */
+.home-icon-website, .home-icon-track, .home-icon-cash, .home-icon-scale, .home-icon-riders, 
+.home-icon-booking
+{ display: inline-block; background: url('images/home-sprites.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; margin-bottom: 10px;}
+ 
+.home-icon-website { background-position: -0px -0px; width: 78px; height: 78px; }
+.home-icon-track { background-position: -0px -78px; width: 75px; height: 67px; }
+.home-icon-cash { background-position: -0px -145px; width: 74px; height: 76px; }
+.home-icon-scale { background-position: -0px -221px; width: 72px; height: 72px; }
+.home-icon-riders { background-position: -0px -293px; width: 70px; height: 80px; }
+.home-icon-booking { background-position: -0px -373px; width: 68px; height: 80px; }
+
+/* Banner */
+
+.home-banner {
+	padding: 5em 0;
+	background-image: linear-gradient(-225deg, #007adf 0%, #00ecbc 100%);
+	position: relative;
+}
+
+.home-banner h1 {
+	font-size: 64px;
+}
+
+.home-banner .card-container {
+	z-index: 1;
+}
+
+/* Features */
+
+.home-features .feature {
+	border: 2px solid #E0E0E1;
+	background: #fff;
+	padding: 1em;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.home-features .feature h4 {
+	color: #007ADF;
+}
+
+.home-features .feature p {
+	margin-bottom: 0;
+}
+
+/* Introducing Airship */
+
+.home-intro { padding: 3em 0; }
+
+.app-list-container {
+	z-index: 1;
+    position: relative;
+    width: 80%;
+}
+
+.app-list {
+	padding: 2em;
+}
+
+/* ==================== */
+/* ===== FEATURES ===== */
+/* ==================== */
+
+.features-banner {
+	padding: 8em 0 0;
+	background-image: linear-gradient(-225deg, #A445B2 0%, #FF0066 100%);
+	position: relative;
+}
+
+.features-banner h5 { line-height: 1.5em; }
+.airship-suite { z-index: 1; }
+
+.stack { margin-top: 25px; }
+.stack .features-list .feature p { color: #666; }
+.stack .features-list .feature h4 {
+	-webkit-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+.features-brand .branded h4.branded,
+.features-brand .client h4.client,
+.features-brand .branded-app h4.branded-app,
+.stack .features-list .feature.active h4,
+.stack .features-list .feature h4:hover { color: #007ADF; cursor: pointer; }
+
+.features-brand .branded h4.branded:before,
+.features-brand .client h4.client:before,
+.features-brand .branded-app h4.branded-app:before,
+.stack .features-list .feature.active h4:before { 
+	content: "→ ";
+    left: -10px;
+    position: absolute;
+}
+
+.features-riders {
+	padding: 3em;
+    background: url(images/features-riders.png) no-repeat center center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+    position: relative;
+}
+.features-riders ul { list-style: none; }
+.features-riders li {
+	font-size: 14px;
+    margin-top: 10px;
+    color: #ddd;
+}
+.features-riders ul li:before {
+	font-family: FontAwesome;
+	content: "\f00c";
+    position: absolute;
+    left: 30px;
+}
+
+.overlay {
+	background: rgba(20,20,20,0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.features-screens > div { display: none; }
+
+/* Branded Website 'branded' */
+.branded .branded-website { display: block; }
+
+@keyframes cards {
+    from {opacity: 0; transform: translate(0, 10%);}
+    to {opacity: 1; transform: translate(0, 0);}
+}
+
+.branded .branded-website { position: relative; height: 260px; z-index: 1; }
+.branded .branded-website img {
+	position: absolute;
+	opacity: 0;
+    animation-name: cards;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.branded .branded-website .courier-2 { top: 17%; left: 10%; animation-delay: 1s; }
+.branded .branded-website .courier-3 { top: 30%; left: 20%; animation-delay: 2s; }
+
+/* Client Dashboard 'client' */
+.client .client-dashboard { display: block; }
+
+/* Branded Mobile App 'branded-app' */
+.branded-app .branded-app { display: block; }
+
+
+/* ==================== */
+/* ===== FEATURES ===== */
+/* ==================== */
+
+/* Icons */
+.p-plans-standard, .p-plans-enterprise, .p-plans-starter, .p-icon-support, .p-icon-website, 
+.p-icon-riders, .p-icon-booking
+{ display: inline-block; background: url('images/pricing-sprites.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.p-plans-standard { background-position: -0px -0px; width: 141px; height: 139px; }
+.p-plans-enterprise { background-position: -0px -139px; width: 101px; height: 90px; }
+.p-plans-starter { background-position: -0px -229px; width: 101px; height: 57px; }
+.p-icon-support { background-position: -0px -286px; width: 80px; height: 80px; }
+.p-icon-website { background-position: -0px -366px; width: 80px; height: 80px; }
+.p-icon-riders { background-position: -0px -446px; width: 70px; height: 80px; }
+.p-icon-booking { background-position: -70px -446px; width: 68px; height: 80px; }
+
+/* Pricing Table */
+.pricing-banner {
+	padding: 5em 0;
+	background-image: linear-gradient(-225deg, #007adf 0%, #00ecbc 100%);
+	position: relative;
+}
+
+.plan {
+	padding: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.plan.standard { z-index: 2; }
+.plan.starter, .plan.enterprise { z-index: 1; }
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+
+    background: #cad5d8;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 7px;
+    border-radius: 10px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 24px; /* Set a specific slider handle width */
+    height: 24px; /* Slider handle height */
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer; /* Cursor on hover */
+    -webkit-box-shadow: 0 5px 10px #cad5d8;
+    box-shadow: 0 5px 10px #cad5d8;
+}
+
+.slider::-moz-range-thumb {
+    width: 24px; /* Set a specific slider handle width */
+    height: 24px; /* Slider handle height */
+    background: #fff;
+    cursor: pointer; /* Cursor on hover */
+}
+
+/* Full Suite */
+.price { font-size: 40px; }
+.price .per { font-size: 16px; color: #666; }
+.footnote {
+	margin-bottom: -10px;
+	font-size: 12px;
+	color: #007ADF;
+	font-family: "Roboto";
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.offer { margin-bottom: 2em; }
+
+/* FAQs */
+.pricing-faqs .faq-list h4 { color: #007ADF; }
+.pricing-faqs .faq-list > div { margin-bottom: 1em; }
+
+/* ========================= */
+/* ===== MEDIA QUERIES ===== */
+/* ========================= */
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+/*No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.features-banner { padding-bottom: 0; }
+	.stack .features-list {margin-top: 3em;}
+	.branded .branded-website { position: relative; height: 280px; }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.logo { height: 30px; }
+	.navbar-links li a { font-size: 14px; }
+	.home-banner { padding: 10em 0; }
+	.home-banner h1 { font-size: 36px; }
+	.home-features { margin-top: -80px; }
+	.home-features .feature { margin-bottom: 0; margin-right: 10px; }
+	.home-intro { padding: 8em 0; }
+	.app-list-container { width: 100%; }
+
+	.features-banner { padding: 5em 0 0; }
+	.features-riders { color: #2A363B; background-position-x: -300px; }
+	.features-riders li { color: #333; }
+	.overlay { display: none; }
+	.branded .branded-website { position: relative; height: 400px; }
+
+	.price { font-size: 36px; }
+	.plan { padding: 1em; }
+	.starter, .enterprise { height: 20em; }
+	.starter h4, .enterprise h4 { margin-bottom: 10px; }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.home-banner h1 { font-size: 64px; }
+	.stack .features-list {margin-top: 0;}
+	.features-riders { color: #2A363B; background-position: left; }
+	.features-riders .text-container { margin-right: 5em; }
+
+	.plan { padding: 2em 1.5em; }
+	.pricing-banner { max-height: 600px; }
+	.pricing-suite { margin-top: 200px; }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	.branded .branded-website { position: relative; height: 350px; }
+	.page-features footer .cta { padding-top: 12em; }
+}
