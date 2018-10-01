@@ -48,14 +48,14 @@
 			var price = document.getElementById("priceText");
 
 			var pricing = {
-				1: "0.10",
-				2: "0.09",
-				3: "0.08",
-				4: "0.07",
-				5: "0.06",
-				6: "0.05",
-				7: "0.04",
-				8: "0.04"
+				1: "5",
+				2: "4.5",
+				3: "4",
+				4: "3.5",
+				5: "3",
+				6: "2.5", // P2.5
+				7: "2",
+				8: "2"
 			}
 
 			// Update the current slider value (each time you drag the slider handle)
